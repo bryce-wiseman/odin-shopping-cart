@@ -1,6 +1,6 @@
 
 #homepage {
-    height: calc(90vh - 105px);
+    height: auto;
     padding: 50px 100px;
 }
 
@@ -44,4 +44,28 @@
     padding: 10px;
     font-size: 0.9rem;
     color: var(--color3);
+}
+
+label {
+    font-size: 0.75rem;
+}
+input {
+    width: 20%;
+}
+
+.cartBtn {
+    background-color: var(--color1);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px 8px;
+}
+
+.cartBtn:hover {
+    background-color: var(--color3);
+}
+
+.cartBtn:active {
+    background-color: var(--shadow);
 }

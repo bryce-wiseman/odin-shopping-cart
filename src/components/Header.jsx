@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './Header.css'
 
 function Header() {
@@ -11,10 +12,8 @@ function Header() {
             </div>
 
             <nav>
-                <select className='sans'>
-                    <option value="home">Home</option>
-                    <option value="cart">Cart</option>
-                </select>
+                <Link to="/" className='sans' id="navHomeBtn">Home</Link>
+                <Link to="/cart" className='sans' id="navCartBtn">Cart</Link>
             </nav>
 
             <div id='cart-icon'>
@@ -22,7 +21,7 @@ function Header() {
                 <img src="./src/cart-logo.png" alt="cart" />
             </div>
 
-            <button type="button" id='checkout-btn' className='sans'>Checkout</button>
+            <button type="button" id='checkout-btn' className='sans' onClick={() => {alert("Ka-Ching! Nice Purchase!")}}>Checkout</button>
         </div>
         <div className='breaker'></div>
         </>

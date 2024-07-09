@@ -18,6 +18,27 @@ h1 {
     color: #eee;
 }
 
+nav {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 20px;
+}
+
+a {
+    color: var(--color3);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #eee;
+}
+
+a:active {
+    color: hsla(0, 0%, 100%, 60%);
+}
+
 .breaker {
     height: 5px;
     width: 100%;
@@ -41,20 +62,6 @@ h1 {
 
 #checkout-btn:hover {
     background-color: hsla(0, 0%, 100%, 60%);
-}
-
-select {
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: transparent;
-    font-size: 1.1rem;
-    color: var(--color3);
-}
-
-select:hover {
-    background-color: hsla(0, 0%, 100%, 20%);
-    
 }
 
 img {

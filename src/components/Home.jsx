@@ -1,16 +1,17 @@
-import { getProducts, displayProducts } from "../data"
+import { getProducts, displayProducts, adjustItemsInCart } from "../data"
+import './App.css'
 import './Home.css'
+import Header from "./Header"
 
 function Home () {
     displayProducts(getProducts())
     return(
-        <div id="homepage">
-            
-            <button type="button" id="num-btn">number</button>
-            <br />
-            <br />
-            <div id="item-box"></div>
-        </div>
+        <>
+            <Header />
+            <div id="homepage">
+                <div id="item-box"></div>
+            </div>
+        </>
     )
 }
 
