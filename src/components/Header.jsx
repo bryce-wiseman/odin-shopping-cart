@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import logo from '../cart-logo.png'
 import './Header.css'
 
 function Header() {
@@ -18,7 +19,7 @@ function Header() {
 
             <div id='cart-icon'>
                 <p id='items-in-cart' className='sans'>0</p>
-                <img src="./src/cart-logo.png" alt="cart" />
+                <img src={logo} alt="cart" />
             </div>
 
             <button type="button" id='checkout-btn' className='sans' onClick={() => {alert("Ka-Ching! Nice Purchase!")}}>Checkout</button>
